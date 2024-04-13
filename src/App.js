@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+import FaceIcon from '@mui/icons-material/Face';
 
+
+
+ 
 
 function App() {
   return (
@@ -29,6 +34,10 @@ function App() {
         <Button variant="text">Text</Button>
 <Button variant="contained">Contained</Button>
 <Button variant="outlined">Outlined</Button>
+<br></br>
+<Chip icon={<FaceIcon />} label="With Icon" />
+<Chip icon={<FaceIcon />} label="With Icon" variant="outlined" />
+
        
 
       </header>

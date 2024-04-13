@@ -3,7 +3,9 @@ import './App.css';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
 import FaceIcon from '@mui/icons-material/Face';
-
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import { Link } from '@mui/icons-material';
+import Typography from '@mui/material/Typography';
 
 
  
@@ -37,6 +39,19 @@ function App() {
 <br></br>
 <Chip icon={<FaceIcon />} label="With Icon" />
 <Chip icon={<FaceIcon />} label="With Icon" variant="outlined" />
+<Breadcrumbs aria-label="breadcrumb">
+  <Link underline="hover" color="inherit" href="/">
+    MUI
+  </Link>
+  <Link
+    underline="hover"
+    color="inherit"
+    href="/material-ui/getting-started/installation/"
+  >
+    Core
+  </Link>
+  <Typography color="text.primary">Breadcrumbs</Typography>
+</Breadcrumbs>
 
        
 

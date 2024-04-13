@@ -18,6 +18,12 @@ function App() {
           Learn React
         </a>
         <h1 style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>これはテストです</h1>
+        <ul style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>
+          <li style={{ width: "100%", color: "#232323" }}>test01</li>
+          これはテストです</ul>
+        {/* <ul className="ulstyle" style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>
+          <li style={{ width: "100%", color: "#232323" }}>test01</li>
+          これはテストです</ul> */}
        
 
       </header>

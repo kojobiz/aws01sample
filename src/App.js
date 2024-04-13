@@ -17,7 +17,11 @@ function App() {
         >
           Learn React
         </a>
+        <h1 style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>これはテストです</h1>
+       
+
       </header>
+        
     </div>
   );
 }

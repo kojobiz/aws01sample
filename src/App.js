@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
+
 
 function App() {
   return (
@@ -19,11 +21,14 @@ function App() {
         </a>
         <h1 style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>これはテストです</h1>
         <ul style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>
-          <li style={{ width: "100%", color: "#232323" }}>test01</li>
+          <li style={{ width: "100%", color: "#fff" }}>test01</li>
           これはテストです</ul>
         {/* <ul className="ulstyle" style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>
           <li style={{ width: "100%", color: "#232323" }}>test01</li>
           これはテストです</ul> */}
+        <Button variant="text">Text</Button>
+<Button variant="contained">Contained</Button>
+<Button variant="outlined">Outlined</Button>
        
 
       </header>

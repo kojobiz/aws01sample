@@ -15,14 +15,35 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
-// itemDataのimport文を追加
-import { itemData } from './ImageData.js';
+// itemDataのimport
+import { itemData } from './ItemData.js';
+// videoのimport
+import MediaCover from './MediaCover.js';
+// imagesのimport
+import ImageA from './ImageA.js';
+// modalのimport
+import BasicModal from './BasicModal.js';
+
 
 function App() {
   return (
     <div className="App">
+      <MediaCover/>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link underline="hover" color="inherit" href="/">
+          MUI
+        </Link>
+        <Link
+          underline="hover"
+          color="inherit"
+          href="/material-ui/getting-started/installation/"
+        >
+          Core
+        </Link>
+        <Typography color="text.primary">Breadcrumbs</Typography>
+      </Breadcrumbs>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -31,13 +52,17 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          
         >
-          Learn React
+          リンク遷移
         </a>
-        <h1 style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>これはテストです</h1>
-        <ul style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>
-          <li style={{ width: "100%", color: "#fff" }}>test01</li>
-          これはテストです</ul>
+        <h1 style={{ width: "100%", height: "100px", color: "white", textAlign: "center", backgroundColor: "black", display: "flex", alignItems: "center", justifyContent: "center" }}>これはテストです</h1>
+        <ul style={{ width: "100%", height: "300px", color: "pink", textAlign: "center", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <li style={{ width: "100%", color: "#232323" }}>List test01</li>
+          <li style={{ width: "100%", color: "#232323" }}>List test02</li>
+          <li style={{ width: "100%", color: "#232323" }}>List test03</li>
+        </ul>
+        <ImageA />
         {/* <ul className="ulstyle" style={{ width: "100%", height: "500px", color: "pink", textAlign: "center" }}>
           <li style={{ width: "100%", color: "#232323" }}>test01</li>
           これはテストです</ul> */}
@@ -47,25 +72,13 @@ function App() {
 <br></br>
 <Chip icon={<FaceIcon />} label="With Icon" />
 <Chip icon={<FaceIcon />} label="With Icon" variant="outlined" />
-<Breadcrumbs aria-label="breadcrumb">
-  <Link underline="hover" color="inherit" href="/">
-    MUI
-  </Link>
-  <Link
-    underline="hover"
-    color="inherit"
-    href="/material-ui/getting-started/installation/"
-  >
-    Core
-  </Link>
-  <Typography color="text.primary">Breadcrumbs</Typography>
-</Breadcrumbs>
 
 
 
-    <ImageList sx={{ width: 500, height: 450 }}>
+
+    <ImageList sx={{ width: '80%', height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">Listitems</ListSubheader>
+        <ListSubheader component="div" >Listitems</ListSubheader>
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -90,7 +103,7 @@ function App() {
         </ImageListItem>
       ))}
     </ImageList>
-    <ImageList sx={{ width: 800, height: 450 }}>
+    <ImageList sx={{ width: '80%', height: 450 }}>
       <ImageListItem key="Subheader" cols={3}>
         <ListSubheader component="div">Listitems</ListSubheader>
       </ImageListItem>
@@ -117,6 +130,10 @@ function App() {
         </ImageListItem>
       ))}
     </ImageList>
+    <div style={{ width: '100%', height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#232323' }}>
+      <BasicModal />
+    </div>
+    
 
 
    

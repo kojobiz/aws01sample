@@ -21,7 +21,7 @@ export default function MediaCover() {
             // poster="https://assets.codepen.io/6093409/river.jpg"
           >
             <source
-              src="./video01.mp4"
+              src="../public/video01.mp4"
               type="video/mp4"
             />
             {/* <source

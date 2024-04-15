@@ -18,15 +18,11 @@ import AddIcon from '@mui/icons-material/Add';
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import ColorLensRoundedIcon from '@mui/icons-material/ColorLensRounded';
 
-export default function ColorInversionHeader() {
-  const [color, setColor] = React.useState('primary');
+export default function Header() {
   return (
     <Sheet
       variant="solid"
-      color={color}
-      invertedColors
       sx={{
         display: 'flex',
         alignItems: 'center',
@@ -34,10 +30,6 @@ export default function ColorInversionHeader() {
         p: 2,
         borderRadius: 0,
         minWidth: 'min-content',
-        ...(color !== 'warning' && {
-          background: (theme) =>
-            `linear-gradient(to top, ${theme.vars.palette[color][600]}, ${theme.vars.palette[color][500]})`,
-        }),
       }}
     >
       {/* <IconButton
@@ -88,9 +80,7 @@ export default function ColorInversionHeader() {
                 variant="outlined"
                 size="sm"
                 sx={{
-                  ml: 'auto',
-                  bgcolor: (theme) =>
-                    `rgba(${theme.vars.palette[color].mainChannel} / 0.4)`,
+                  ml: 'auto'
                 }}
               >
                 Beta

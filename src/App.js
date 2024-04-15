@@ -58,6 +58,9 @@ function App() {
         >
           リンク遷移
         </a>
+        <div style={{ width: '100%', height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#232323' }}>
+      <BasicModal />
+    </div>
         <h1 style={{ width: "100%", height: "100px", color: "white", textAlign: "center", backgroundColor: "black", display: "flex", alignItems: "center", justifyContent: "center" }}>これはテストです</h1>
         <ul style={{ width: "100%", height: "300px", color: "pink", textAlign: "center", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
           <li style={{ width: "100%", color: "#232323" }}>List test01</li>
@@ -132,9 +135,7 @@ function App() {
         </ImageListItem>
       ))}
     </ImageList>
-    <div style={{ width: '100%', height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#232323' }}>
-      <BasicModal />
-    </div>
+   
     <ClipboardCopy />
 
     

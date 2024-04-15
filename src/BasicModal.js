@@ -29,8 +29,8 @@ export default function BasicModal() {
         <Sheet
           variant="outlined"
           sx={{
-            maxWidth: 500,
-            height:700,
+            maxWidth: '80%',
+            height:'60%',
             borderRadius: 'md',
             p: 3,
             boxShadow: 'lg',
@@ -51,34 +51,35 @@ export default function BasicModal() {
             Make sure to use <code>aria-labelledby</code> on the modal dialog with an
             optional <code>aria-describedby</code> attribute.
           </Typography>
-          <ImageList sx={{ width: '80%', height: 450 }}>
-      <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div" >Listitems</ListSubheader>
-      </ImageListItem>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-            subtitle={item.author}
-            actionIcon={
-              <IconButton
-                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                aria-label={`info about ${item.title}`}
-              >
-                <InfoIcon />
-              </IconButton>
-            }
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <ImageList sx={{ width: '80%', height: 450}}>
+                <ImageListItem key="Subheader" cols={2}>
+                  <ListSubheader component="div" >Listitems</ListSubheader>
+                </ImageListItem>
+                {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+              <img
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                alt={item.title}
+                loading="lazy"
+              />
+              <ImageListItemBar
+                title={item.title}
+                subtitle={item.author}
+                actionIcon={
+                  <IconButton
+                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                    aria-label={`info about ${item.title}`}
+                  >
+                    <InfoIcon />
+                  </IconButton>
+                }
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+        </div>
         </Sheet>
       </Modal>
     </React.Fragment>

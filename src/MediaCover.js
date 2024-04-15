@@ -20,14 +20,14 @@ export default function MediaCover() {
             muted
             // poster="https://assets.codepen.io/6093409/river.jpg"
           >
-            <source
-              src="../public/video01.mp4"
-              type="video/mp4"
-            />
             {/* <source
-              src="https://assets.codepen.io/6093409/river.mp4"
+              src="../public/video_preview_h264.mp4"
               type="video/mp4"
             /> */}
+            <source
+              src="https://assets.codepen.io/6093409/river.mp4"
+              type="video/mp4"
+            />
           </video>
         </CardCover>
         <CardContent>

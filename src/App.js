@@ -138,14 +138,8 @@ function App() {
    
     <ClipboardCopy />
 
+    {/* imagegallery */}
     
-
-
-   
-
-
-       
-
       </header>
         
     </div>

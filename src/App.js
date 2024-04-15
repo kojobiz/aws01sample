@@ -23,6 +23,8 @@ import MediaCover from './MediaCover.js';
 import ImageA from './ImageA.js';
 // modalのimport
 import BasicModal from './BasicModal.js';
+// datafilterのimport
+import ClipboardCopy from './ClipboardCopy.js';
 
 
 function App() {
@@ -133,6 +135,8 @@ function App() {
     <div style={{ width: '100%', height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#232323' }}>
       <BasicModal />
     </div>
+    <ClipboardCopy />
+
     
 
 

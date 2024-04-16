@@ -14,10 +14,10 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import CustomSeparator from './BreadList.js';
 
-import CustomSeparator from './Bread.js';
 
-
+// import CustomSeparator from './Bread.js';
 // itemDataのimport
 import { itemData } from './ItemData.js';
 // videoのimport
@@ -27,13 +27,14 @@ import ImageA from './ImageA.js';
 // modalのimport
 import BasicModal from './BasicModal.js';
 // datafilterのimport
-import ClipboardCopy from './ClipboardCopy.js';
+// import ClipboardCopy from './ClipboardCopy.js';
 // productのimport
 import Product from './Product.js';
 
 function App() {
   return (
     <div className="App">
+
       <MediaCover/>
       <Breadcrumbs aria-label="breadcrumb">
         <Link underline="hover" color="inherit" href="/">
@@ -140,8 +141,8 @@ function App() {
         </ImageListItem>
       ))}
     </ImageList>
-   
-    <ClipboardCopy />
+   {/* 製品リストに使える */}
+    {/* <ClipboardCopy /> */}
 
     <Product />
 

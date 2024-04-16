@@ -15,6 +15,9 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
+import CustomSeparator from './Bread.js';
+
+
 // itemDataのimport
 import { itemData } from './ItemData.js';
 // videoのimport
@@ -25,7 +28,8 @@ import ImageA from './ImageA.js';
 import BasicModal from './BasicModal.js';
 // datafilterのimport
 import ClipboardCopy from './ClipboardCopy.js';
-
+// productのimport
+import Product from './Product.js';
 
 function App() {
   return (
@@ -44,6 +48,7 @@ function App() {
         </Link>
         <Typography color="text.primary">Breadcrumbs</Typography>
       </Breadcrumbs>
+      <CustomSeparator />
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
@@ -137,6 +142,8 @@ function App() {
     </ImageList>
    
     <ClipboardCopy />
+
+    <Product />
 
     {/* imagegallery */}
     

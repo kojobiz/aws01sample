@@ -15,6 +15,8 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import CustomSeparator from './BreadList.js';
+// 沿革情報
+import History from './History.js';
 
 
 // import CustomSeparator from './Bread.js';
@@ -30,7 +32,8 @@ import BasicModal from './BasicModal.js';
 // import ClipboardCopy from './ClipboardCopy.js';
 // productのimport
 import Product01 from './productJS/Product01.js';
-import History from './History.js';
+import Product02 from './productJS/Product02.js';
+
 
 function App() {
   return (
@@ -148,8 +151,12 @@ function App() {
     </ImageList>
    {/* 製品リストに使える */}
     {/* <ClipboardCopy /> */}
+    <br></br>
 
     <Product01 />
+    <br></br>
+    <Product02 />
+    <br></br>
     <History />
 
     {/* imagegallery */}

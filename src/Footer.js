@@ -17,6 +17,7 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SendIcon from '@mui/icons-material/Send';
 import ColorLensRoundedIcon from '@mui/icons-material/ColorLensRounded';
+import p01 from './images/products/img_01.png';
 
 export default function ColorInversionFooter() {
   const [color, setColor] = React.useState('neutral');
@@ -92,7 +93,8 @@ export default function ColorInversionFooter() {
             minHeight={80}
             sx={{ flexBasis: { xs: 200, md: 'initial' } }}
           >
-            <img alt="" src="/static/blog/mui-product-comparison/ecosystem.png" />
+            <img alt="" src={ p01 } />
+            {/* <img alt="" src="/static/blog/mui-product-comparison/ecosystem.png" /> */}
           </AspectRatio>
           <CardContent>
             <Typography level="body-sm">Intro to the MUI ecosystem</Typography>

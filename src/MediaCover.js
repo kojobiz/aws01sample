@@ -4,7 +4,7 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/material/Typography';
-import heroVideo from '../src/images/video_preview_h264.mp4';
+// import heroVideo from '../src/images/video_preview_h264.mp4';
 
 
 export default function MediaCover() {
@@ -23,18 +23,18 @@ export default function MediaCover() {
             // poster="https://assets.codepen.io/6093409/river.jpg"
           >
            
-            <source
+            {/* <source
               src={heroVideo}
               type="video/mp4"
-            />
+            /> */}
              {/* <source
               src="../public/video_preview_h264.mp4"
               type="video/mp4"
             /> */}
-              {/* <source
+              <source
                 src="https://assets.codepen.io/6093409/river.mp4"
                 type="video/mp4"
-              /> */}
+              />
           </video>
         </CardCover>
         <CardContent>

@@ -14,7 +14,7 @@ export default function MediaCover() {
       sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', p: 0, m: 0 }}
     >
 
-      <Card component="li" sx={{ Width: '100%', flexGrow: 1, borderRadius: 0, height:500 }}>
+      <Card component="li" sx={{ Width: '100%', flexGrow: 1, borderRadius: 0, height:500, border:'none' }}>
         <CardCover>
           <video
             autoPlay

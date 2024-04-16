@@ -29,7 +29,8 @@ import BasicModal from './BasicModal.js';
 // datafilterのimport
 // import ClipboardCopy from './ClipboardCopy.js';
 // productのimport
-import Product from './Product.js';
+import Product01 from './productJS/Product01.js';
+import History from './History.js';
 
 function App() {
   return (
@@ -83,6 +84,8 @@ function App() {
 <br></br>
 <Chip icon={<FaceIcon />} label="With Icon" />
 <Chip icon={<FaceIcon />} label="With Icon" variant="outlined" />
+<br/>
+<br/>
 
 
 
@@ -114,6 +117,8 @@ function App() {
         </ImageListItem>
       ))}
     </ImageList>
+    <br/>
+    <br/>
     <ImageList sx={{ width: '80%', height: 450 }}>
       <ImageListItem key="Subheader" cols={3}>
         <ListSubheader component="div">Listitems</ListSubheader>
@@ -144,7 +149,8 @@ function App() {
    {/* 製品リストに使える */}
     {/* <ClipboardCopy /> */}
 
-    <Product />
+    <Product01 />
+    <History />
 
     {/* imagegallery */}
     
